@@ -17,6 +17,7 @@ import Profile from "./pages/User/Profile.jsx";
 import PrivateRoute from "./components/PrivateRoute.jsx";
 import AdminRoute from "./pages/Admin/AdminRoute.jsx";
 import UserList from "./pages/Admin/UserList.jsx";
+import CategoryList from "./pages/Admin/CategoryList.jsx";
 
 // Create the router
 const router = createBrowserRouter(
@@ -32,8 +33,8 @@ const router = createBrowserRouter(
 
       <Route path="/admin" element={<AdminRoute />}>
         <Route path="userlist" element={<UserList />} />
-       {/*  <Route path="categorylist" element={<CategoryList />} />
-        <Route path="productlist" element={<ProductList />} />
+         <Route path="categorylist" element={<CategoryList />} />
+       {/* <Route path="productlist" element={<ProductList />} />
         <Route path="allproductslist" element={<AllProducts />} />
         <Route path="productlist/:pageNumber" element={<ProductList />} />
         <Route path="product/update/:_id" element={<ProductUpdate />} />
