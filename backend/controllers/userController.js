@@ -40,6 +40,11 @@ const loginUser = asyncHandler(async (req, res) => {
 
   const existingUser = await User.findOne({ email });
 
+  if(!existingUser)
+    {
+      res.status(400).send("wrong Credentials");
+    }
+
   if (existingUser) {
     const isPasswordValid = await bcrypt.compare(
       password,
