@@ -32,13 +32,18 @@ const CategoryList = () => {
 
     try {
       const result = await createCategory({ name }).unwrap();
-      setName("");
-      toast.success(`${result.name} is created.`);
+      if (result.error) {
+        toast.error(result.error);
+      } else {
+        setName("");
+        toast.success(`${result.name} is created.`);
+      }
     } catch (error) {
       console.error(error);
       toast.error("Creating category failed, try again.");
     }
   };
+
 
 
 
