@@ -24,8 +24,8 @@ Make sure you have the following installed:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/ecommerce-app.git
-    cd ecommerce-app
+    git clone https://github.com/k29laksh/Ecommerce-app.git
+    cd Ecommerce-app
     ```
 
 ### Backend Setup
