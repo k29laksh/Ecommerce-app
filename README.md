@@ -76,7 +76,7 @@ Make sure you have the following installed:
 
 ## Usage
 
-Once both servers are running, you can access the application by navigating to `http://localhost:3000` in your web browser.
+Once both servers are running, you can access the application by navigating to `http://localhost:5173` in your web browser.
 
 
 ## Acknowledgments
